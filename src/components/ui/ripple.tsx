@@ -45,7 +45,7 @@ const Ripple = React.memo(function Ripple({
       }
 
       {Array.from({ length: numCircles }, (_, i) => {
-        const size = sizes.mainCircleSize + i * 50; 
+        const size = sizes.mainCircleSize + i * 80; 
         const opacity = mainCircleOpacity - i * 0.01;
         const animationDelay = `${i * 0.02}s`;
         const borderOpacity = 5 + i * 9;
