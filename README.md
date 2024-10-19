@@ -1,6 +1,6 @@
 # React + Vite + Magic UI
 
-Intra-Departmental Symposium 2024 🎓
+# Intra-Departmental Symposium 2024 🎓
 Welcome to the official repository for the Intra-Departmental Symposium 2024. This event aims to foster collaboration, showcase cutting-edge research, and promote knowledge-sharing among students and faculty within the department.
 
 
