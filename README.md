@@ -1,6 +1,9 @@
-# React + Vite
+# React + Vite + Magic UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Intra-Departmental Symposium 2024 🎓
+Welcome to the official repository for the Intra-Departmental Symposium 2024. This event aims to foster collaboration, showcase cutting-edge research, and promote knowledge-sharing among students and faculty within the department.
+
+
 
 Currently, two official plugins are available:
 
