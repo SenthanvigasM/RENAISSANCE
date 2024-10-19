@@ -1,0 +1,29 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ripple-container {
+  height: 100vh; 
+  width: 100%;
+}
+
+.event {
+  margin-top: 0;
+  padding-top: 5vh; 
+}
+
+@media (max-width: 768px) {
+  .event {
+    padding-top: 8vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .event {
+    padding-top: 10vh;
+  }
+}

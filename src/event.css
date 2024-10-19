@@ -1,0 +1,155 @@
+.event-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.event-poster {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 20px 0;
+  color: #fff;
+}
+
+.event-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, opacity 0.6s ease-out;
+  opacity: 0; /* Hidden initially for fade-in */
+  transform: translateY(30px); /* Move down slightly for initial state */
+}
+
+/* When visible in viewport, apply fade-in */
+.event-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover zoom effect */
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* Event grid spacing - justify content */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center; /* Center the cards horizontally */
+  padding: 20px;
+}
+
+.event-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.event-guid {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.event-thm {
+  font-size: 1rem;
+  margin: 10px 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.event-idea {
+  color: #bbb;  
+  margin-top: 10px;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+}
+.event-idea li {
+  margin-bottom: 5px;
+}
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 0.5mm;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: azure;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: rgb(22, 194, 213);
+  border-color: rgb(22, 194, 213);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hover-link {
+ 
+  text-decoration: none;
+}
+
+.hover-link:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr; /* Make each card take up the full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+}
